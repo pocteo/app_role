@@ -5,5 +5,5 @@ image : pocteo/boilerplate-node-api:pr-31
 namespace: sandbox-takoua
 containerport_app: 8081
 targetport_app: 3000
-nodeport_nexus: 21001
-port_nexus:  3000
+nodeport_app: 31901
+port_app:  3000
