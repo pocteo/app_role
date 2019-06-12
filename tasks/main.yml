@@ -1,0 +1,10 @@
+---
+# tasks file for app_role
+
+- name: create the deployments and services
+  command:  kubectl apply -f -
+  args:
+      stdin: "{{ lookup('template', '{{ item }}-app.yaml.j2') }}"
+  loop:
+    - deployment
+    - service
