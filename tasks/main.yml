@@ -8,3 +8,5 @@
   loop:
     - deployment
     - service
+- name: Allow access to {{ NODE_PORT }} TCP port on GCP
+  command: gcloud compute firewall-rules create rule-{{ NODE_PORT}} --allow=TCP:{{ NODE_PORT }}
