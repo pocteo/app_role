@@ -12,7 +12,7 @@ spec:
   - port: {{ port_app }}
     targetPort: {{ targetport_app }}
     protocol: TCP
-    nodePort: {{ nodeport_app }}
+    nodePort: {{ NODE_PORT }}
   selector:
     app: app
 
