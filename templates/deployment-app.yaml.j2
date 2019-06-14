@@ -18,7 +18,7 @@ spec:
         app: app
     spec:
       containers:
-      - image: {{ image }}
+      - image: "{{ image }}:pr-{{ PULL_REQUEST_ID }}"
         name: app
         ports:
         - containerPort: {{ containerport_app }}
